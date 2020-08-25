@@ -4,7 +4,9 @@
   "description": "eslint shareable config for me",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version && npm publish",
+    "release:major": "standard-version --release-as major && npm publish",
+    "posttag": "git push && git push origin --tags"
   },
   "keywords": [
     "eslint",
@@ -32,5 +34,8 @@
   },
   "peerDependencies": {
     "eslint": "^7.7.0"
+  },
+  "devDependencies": {
+    "standard-version": "^9.0.0"
   }
 }
