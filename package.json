@@ -1,8 +1,13 @@
 {
   "name": "eslint-config-leedavidcs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "eslint shareable config for me",
   "main": "index.js",
+  "homepage": "https://github.com/leedavidcs/eslint-config-leedavidcs.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leedavidcs/eslint-config-leedavidcs.git"
+  },
   "scripts": {
     "release": "standard-version && npm publish",
     "release:major": "standard-version --release-as major && npm publish",
